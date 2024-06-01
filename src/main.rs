@@ -40,7 +40,7 @@ async fn main() -> std::io::Result<()> {
             .route("/multiply", web::get().to(multiply))
             .route("/divide", web::get().to(divide))
     })
-    .bind("127.0.0.1:8082")?
+    .bind("127.0.0.1:8080")?
     .run()
     .await
 }
